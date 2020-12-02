@@ -8,7 +8,7 @@
         
       </div>
     </div>
-    <VmEditor width="100%" class="vm-margin" @upload="setHtml">
+    <VmEditor width="100%" class="vm-margin" @upload="onLoad">
     </VmEditor>
   </div>
 </template>
@@ -30,6 +30,14 @@ export default {
   methods: {
     setHtml: function (data) {
       this.bindHtml = data
+    },
+    onLoad(id) {      
+      console.log(id);
+      this.$api.article.articleDetail(id, {        
+          api: 123      
+      }).then(res=> {
+          // 执行某些操作      
+      })    
     }
   }
 }
