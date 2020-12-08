@@ -30,6 +30,16 @@
         </VmChartRadar>
       </Col>
     </Row>
+    <Row :gutter="16">
+      <Col span="12">
+        <VmChartHeatMap title="HeatMap Chart" :data="dataHeat">
+        </VmChartHeatMap>
+      </Col>
+      <Col span="12">
+        <VmChartRadar title="Radar Chart" :indicator="dataRadar.indicator" :data="dataRadar.data">
+        </VmChartRadar>
+      </Col>
+    </Row>
   </div>
 </template>
 
@@ -37,12 +47,14 @@
   import VmChartBarLine from '@/components/vm-chart-bar-line'
   import VmChartPie from '@/components/vm-chart-pie'
   import VmChartRadar from '@/components/vm-chart-radar'
+  import VmChartHeatMap from '@/components/vm-chart-heat-map'
   export default {
     name: 'Charts',
     components: {
       VmChartBarLine,
       VmChartPie,
-      VmChartRadar
+      VmChartRadar,
+      VmChartHeatMap
     },
     data: function () {
       return {
@@ -135,7 +147,8 @@
               name: '实际开销'
             }
           ]
-        }
+        },
+        dataHeat:[]
       }
     }
   }
