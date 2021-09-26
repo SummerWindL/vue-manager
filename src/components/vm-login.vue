@@ -60,8 +60,10 @@
         }).then(res=> {
           // 执行某些操作
           console.log(JSON.stringify(res));
-          if(res.data.success == 'false'){ //失败
-            this.$toast.show('登录失败' , 2000);
+          if(res.data.resultcode == 0){ //成功
+            this.$toast.show('登录成功' , 2000);
+          }else {
+            this.$toast.show(res.data.resultmsg , 2000);
           }
         })
       }

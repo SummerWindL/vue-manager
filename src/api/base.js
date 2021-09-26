@@ -1,8 +1,9 @@
 /**
  * 接口域名的管理
  */
+const port = "16089";
 const base = {
-    sq: 'http://localhost:16089/aixapigateway/api/v1/manageclient',
+    api_url: `http://localhost:`+port+`/aixapiplatform/api/v1/client`,
     bd: 'http://xxxxx22222.com/api'
 }
 

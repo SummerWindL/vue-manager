@@ -10,17 +10,17 @@ import qs from 'qs'; // 根据需求是否导入qs模块
 const article = {
     // 新闻列表
     articleList () {
-        return axios.get(`${base.sq}/topics`);
+        return axios.get(`${base.api_url}/topics`);
     },
     // 新闻详情,演示
     articleDetail (id, params) {
-        return axios.get(`${base.sq}/topic/${id}`, {
+        return axios.get(`${base.api_url}/topic/${id}`, {
             params: params
         });
     },
     // post提交
     login (params) {
-        return axios.post(`${base.sq}`, qs.stringify(params));
+        return axios.post(`${base.api_url}`, qs.stringify(params));
     }
     // 其他接口…………
 }
