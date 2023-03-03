@@ -11,7 +11,8 @@ const login = {
   // post提交
   login (params) {
     console.log('======>',params);
-    return axios.post(`${base.api_url}/cmd_10010?factoryid=zav6f0t3w6fwz9u85remvqxkduo99tjj&factorysecretkey=3fpjfimcp2iybd6h4l30c1kpvjzfcipg`, params);
+    return axios.post(`${base.tomcat_url}/hello/api/queryUserInfo?userId=1112`,params);
+    //return axios.post(`${base.api_url}/cmd_10010?factoryid=zav6f0t3w6fwz9u85remvqxkduo99tjj&factorysecretkey=3fpjfimcp2iybd6h4l30c1kpvjzfcipg`, params);
   }
   // 其他接口…………
 }

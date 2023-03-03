@@ -25,6 +25,12 @@
                 Dashboard  
               </router-link>
           </Menu-item>
+          <Menu-item name="Word2Pdf">
+              <router-link to="/Word2Pdf">
+                <i class="fa fa-dashboard"></i>
+                Word2Pdf  
+              </router-link>
+          </Menu-item>
           <Menu-item name="Widget">
               <router-link to="/widget">
                 <i class="fa fa-cogs"></i>
@@ -96,7 +102,7 @@
     </div>
     <div class="main-content">
       <router-view></router-view> 
-      <p class="vm-author">vue-manager designed by <a href="https://github.com/luosijie" target="_blank">Jesse Luo</a></p> 
+      <p class="vm-author">vue-manager designed by <a href="https://github.com/SummerWindL" target="_blank">Advance</a></p> 
     </div>
   </div>
   </div>

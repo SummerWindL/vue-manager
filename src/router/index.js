@@ -12,6 +12,7 @@ import Charts from '@/pages/Charts'
 import Login from '@/pages/Login'
 import LockScreen from '@/pages/LockScreen'
 import Loading from '@/pages/Loading'
+import Word2Pdf from '@/pages/Word2Pdf'
 
 Vue.use(Router)
 
@@ -25,6 +26,11 @@ export default new Router({
           path: '/',
           name: 'Dashboard',
           component: Dashboard
+        },
+        {
+          path: 'word2pdf',
+          name: 'Word2Pdf',
+          component: Word2Pdf
         },
         {
           path: 'widget',

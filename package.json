@@ -2,7 +2,7 @@
   "name": "vue-manager",
   "version": "1.0.0",
   "description": "A Vue.js project",
-  "author": "JesseLuo <luo_sj@163.com>",
+  "author": "Advance<yanl.fu@outlook.com>",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
@@ -16,6 +16,7 @@
     "iview": "^2.0.0-rc.17",
     "qs": "^6.7.0",
     "style-loader": "^0.18.2",
+    "uglifyjs-webpack-plugin": "^1.1.1",
     "vant": "^2.11.1",
     "vm-editor": "^0.1.2",
     "vue": "^2.3.3",

@@ -23,11 +23,19 @@ module.exports = {
   },
   dev: {
     env: require('./dev.env'),
-    port: 8080,
+    port: 7002,
     autoOpenBrowser: true,
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    proxyTable: {
+      '/word2Pdf': { // 匹配所有以 '/api'开头的请求路径
+        target: 'http://localhost:8089/', // 代理目标的基础路径
+        // secure: false,  // 如果是https接口，需要配置这个参数
+        secure:false,// 这是签名认证，http和https区分的参数设置y
+        changeOrigin: true,
+        pathRewrite: { "^word2Pdf": "" }
+     }
+    },
     // CSS Sourcemaps off by default because relative paths are "buggy"
     // with this option, according to the CSS-Loader README
     // (https://github.com/webpack/css-loader#sourcemaps)

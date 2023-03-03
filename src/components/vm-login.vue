@@ -55,7 +55,15 @@
             }
           }
         };
-        this.$api.login.login(queryParams, {
+        let userParams = {
+          userId: 11,
+          request: {
+            userId: 111,
+            password: 222
+          }
+        }
+        debugger;
+        this.$api.login.login(userParams, {
           api: 123
         }).then(res=> {
           // 执行某些操作
