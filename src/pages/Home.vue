@@ -105,7 +105,6 @@
       <p class="vm-author">vue-manager designed by <a href="https://github.com/SummerWindL" target="_blank">Advance</a></p> 
     </div>
   </div>
-  </div>
 </template>
 <script>
 import VmMsgPush from '@/components/vm-msg-push.vue'
