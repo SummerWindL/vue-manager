@@ -31,6 +31,12 @@
                 Word2Pdf  
               </router-link>
           </Menu-item>
+          <Menu-item name="PuzzleGame">
+              <router-link to="/PuzzleGame">
+                <i class="fa fa-dashboard"></i>
+                PuzzleGame  
+              </router-link>
+          </Menu-item>
           <Menu-item name="Widget">
               <router-link to="/widget">
                 <i class="fa fa-cogs"></i>

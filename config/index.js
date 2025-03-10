@@ -28,6 +28,13 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
+     '/api': { // 匹配所有以 '/api'开头的请求路径
+        target: 'http://localhost:8071', // 代理目标的基础路径
+        // secure: false,  // 如果是https接口，需要配置这个参数
+        secure:false,// 这是签名认证，http和https区分的参数设置y
+        changeOrigin: true,
+        pathRewrite: { "^/api": "/api" }
+      },
       '/word2Pdf': { // 匹配所有以 '/api'开头的请求路径
         target: 'http://localhost:8089/', // 代理目标的基础路径
         // secure: false,  // 如果是https接口，需要配置这个参数

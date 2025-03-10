@@ -13,7 +13,7 @@ import Login from '@/pages/Login'
 import LockScreen from '@/pages/LockScreen'
 import Loading from '@/pages/Loading'
 import Word2Pdf from '@/pages/Word2Pdf'
-
+import PuzzleGame from '@/pages/PuzzleGame'
 Vue.use(Router)
 
 export default new Router({
@@ -31,6 +31,11 @@ export default new Router({
           path: 'word2pdf',
           name: 'Word2Pdf',
           component: Word2Pdf
+        },
+        {
+          path: 'puzzleGame',
+          name: 'PuzzleGame',
+          component: PuzzleGame
         },
         {
           path: 'widget',
