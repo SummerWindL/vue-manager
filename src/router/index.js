@@ -14,6 +14,8 @@ import LockScreen from '@/pages/LockScreen'
 import Loading from '@/pages/Loading'
 import Word2Pdf from '@/pages/Word2Pdf'
 import PuzzleGame from '@/pages/PuzzleGame'
+import WorkFlow from '@/pages/WorkFlow'
+import Resume from '@/pages/Resume'
 Vue.use(Router)
 
 export default new Router({
@@ -36,6 +38,16 @@ export default new Router({
           path: 'puzzleGame',
           name: 'PuzzleGame',
           component: PuzzleGame
+        },
+        {
+          path: 'workFlow',
+          name: 'WorkFlow',
+          component: WorkFlow
+        },
+        {
+          path: 'resume',
+          name: 'Resume',
+          component: Resume
         },
         {
           path: 'widget',

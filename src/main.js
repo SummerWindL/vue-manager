@@ -9,13 +9,17 @@ import api from './api' // 导入api接口
 import '!style-loader!css-loader!less-loader!./theme/index.less'
 import toast from './components/toast'
 import axios from 'axios'
+import ViewUI from 'view-design';
+import 'view-design/dist/styles/iview.css';
+Vue.use(ViewUI);
+
 // 安装toast插件
 Vue.use(toast)
 
 Vue.config.productionTip = false
 Vue.prototype.$api = api; // 将api挂载到vue的原型上
 Vue.prototype.$axios=axios
-Vue.use(iView)
+// Vue.use(iView)
 
 /* eslint-disable no-new */
 new Vue({

@@ -25,18 +25,48 @@
                 Dashboard  
               </router-link>
           </Menu-item>
-          <Menu-item name="Word2Pdf">
-              <router-link to="/Word2Pdf">
-                <i class="fa fa-dashboard"></i>
-                Word2Pdf  
-              </router-link>
-          </Menu-item>
-          <Menu-item name="PuzzleGame">
-              <router-link to="/PuzzleGame">
-                <i class="fa fa-dashboard"></i>
-                PuzzleGame  
-              </router-link>
-          </Menu-item>
+          <Submenu name="Tools">
+              <template slot="title">
+                  <i class="fa fa-wrench"></i> 
+                  Tools
+              </template>
+              <Menu-item name="Word2Pdf">
+                  <router-link to="/Word2Pdf">
+                    <i class="fa fa-dashboard"></i>
+                    Word2Pdf  
+                  </router-link>
+              </Menu-item>
+              <Menu-item name="Resume">
+                  <router-link to="/Resume">
+                    <i class="fa fa-file-text"></i>
+                    Resume  
+                  </router-link>
+              </Menu-item>
+          </Submenu>
+          <Submenu name="Automation">
+              <template slot="title">
+                  <i class="fa fa-code-fork"></i>
+                  Workflow
+              </template>
+              <Menu-item name="n8n">
+                  <router-link to="/WorkFlow">
+                      <i class="fa fa-share-alt"></i>
+                      n8n 工作流  
+                  </router-link>
+              </Menu-item>
+          </Submenu>
+          <Submenu name="Games">
+              <template slot="title">
+                  <i class="fa fa-gamepad"></i>
+                  Games
+              </template>
+              <Menu-item name="PuzzleGame">
+                  <router-link to="/PuzzleGame">
+                    <i class="fa fa-dashboard"></i>
+                    PuzzleGame  
+                  </router-link>
+              </Menu-item>
+          </Submenu>
           <Menu-item name="Widget">
               <router-link to="/widget">
                 <i class="fa fa-cogs"></i>
